@@ -22,18 +22,13 @@
 						<img src="<?php echo get_template_directory_uri(); ?>/nc_files/images/deco.jpg" alt="" width="" height=""/>
 					</div>
 					<div class="contact-form">
-						<form>
-							<p><input type="text" name="" placeholder="Name"/></p>
-							<p><input type="email" name="" placeholder="Email"/></p>
-							<p><input type="text" name="" placeholder="Phone"/></p>
-							<input type="submit" name="" value="SEND"/>							
-						</form>
+						<?php echo do_shortcode('[contact-form-7 id="23" title="Contact form"]');?>
 					</div>
 					
 				</div><!--footer top end-->						
 				
 				<div id="footer-bottom">
-					<img id="footer-logo" src="<?php echo get_template_directory_uri(); ?>/inc_files/images/footer-logo.png" alt="" width="" height=""/>					
+					<img id="footer-logo" src="<?php the_field('comapy_logo_footer','option');?>" alt="" width="" height=""/>					
 					<p>&copy; MSN Nutrition  - <a href="#" target="_blank">Website  by Designfolk</a></p>
 				</div><!--footer bottom end-->	
 				

@@ -183,3 +183,27 @@ function wpb_first_and_last_menu_class($items) {
 }
 add_filter('wp_nav_menu_objects', 'wpb_first_and_last_menu_class');
 
+if( function_exists('acf_add_options_page') ) {
+	
+	acf_add_options_page();
+}
+
+if( function_exists('acf_add_options_sub_page') )
+{
+    	acf_add_options_sub_page( 'Common CMS' );
+  	
+}
+
+function nacin_register_slideshows_post_type() {
+    register_post_type( 'services', array(
+        'labels' => array(
+            'name' => 'Services',
+            'singular_name' => 'service',
+        ),
+        'public' => true,
+        'show_ui' => true,
+        'show_in_menu' => 'edit.php',
+        'supports' => array( 'title' ,'thumbnail', 'editor' ),
+    ) );
+}
+add_action( 'init', 'nacin_register_slideshows_post_type' );
