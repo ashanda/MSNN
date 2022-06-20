@@ -1,0 +1,1 @@
+<div id="inner-banner" style="background-image:url(<?php echo get_template_directory_uri(); ?>/inc_files/images/main-banner.jpg)"></div>
