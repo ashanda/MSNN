@@ -207,3 +207,9 @@ function nacin_register_slideshows_post_type() {
     ) );
 }
 add_action( 'init', 'nacin_register_slideshows_post_type' );
+
+function new_excerpt_more($more) {
+	global $post;
+	return ' ...';
+   }
+   add_filter('excerpt_more', 'new_excerpt_more');

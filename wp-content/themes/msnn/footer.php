@@ -12,13 +12,9 @@
 ?>
 			<div id="footer-wrapper">				
 				<div id="footer-top">				
-					<h4>don’t struggle alone anymore- we can do this together!</h4>					
+					<h4><?php the_field('contact_title','option');?></h4>					
 					<div class="col">
-						<p>All you need to do to find out if this is for you is to get in touch.  
-						I can offer you a FREE 30 minute discovery call and we will take it from there.
-						Call Melanie on <strong>07305 528610</strong> or simply enter your details here and I will get back to you.</p>  
-						 
-						<p><strong>Food doesn’t have to be a problem. Let’s talk.</strong></p>
+					<?php the_field('contact_description','option');?>
 						<img src="<?php echo get_template_directory_uri(); ?>/nc_files/images/deco.jpg" alt="" width="" height=""/>
 					</div>
 					<div class="contact-form">
