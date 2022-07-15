@@ -9,13 +9,13 @@ get_template_part( 'template-parts/inner', 'banner' );?>
 					<h1><?php the_field('main_title');?></h1>
 					<hr/>
 				</div>
-				<?php if( have_rows('slides') ): ?>
+				<?php if( have_rows('faqs') ): ?>
 				
-				<?php while( have_rows('slides') ): the_row();?>
+				<?php while( have_rows('faqs') ): the_row();?>
 					
 				<div class="faq-row"> 
-					<h3><?php the_sub_field('caption'); ?></h3>
-					<p><?php the_sub_field('caption'); ?></p>
+					<h3><?php the_sub_field('question'); ?></h3>
+					<p><?php the_sub_field('answer'); ?></p>
 					<hr/>
 				</div>
 				<?php endwhile; ?>
