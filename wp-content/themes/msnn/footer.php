@@ -36,25 +36,7 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 		<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/inc_files/scripts/lightslider/src/js/lightslider.js"></script>
 		<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/inc_files/scripts/ui.js"></script>
-		<script>
-			window.scroll({
-				top: 2500, 
-				left: 0, 
-				behavior: 'smooth'
-				});
-
-				// Scroll certain amounts from current position 
-				window.scrollBy({ 
-				top: 100, // could be negative value
-				left: 0, 
-				behavior: 'smooth' 
-				});
-
-				// Scroll to a certain element
-				document.querySelector('.hello').scrollIntoView({ 
-				behavior: 'smooth' 
-				});
-		</script>
+		
 		<?php wp_footer(); ?>	
 	</body>
 </html>
