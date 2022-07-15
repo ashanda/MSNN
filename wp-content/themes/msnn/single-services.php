@@ -32,7 +32,7 @@ get_template_part( 'template-parts/inner', 'banner' );?>
 							
 						</div>
 					</div>
-					<a href="<?php the_sub_field('caption'); ?>" class="button">book now</a>
+					<a href="<?php the_sub_field('book_now_button_link'); ?>" class="button">book now</a>
 				</div><!--content blocks end-->
 						
 					<?php endwhile; ?>
